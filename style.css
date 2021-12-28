@@ -41,7 +41,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -54,8 +54,8 @@ button:hover {
 }
 
 .selection-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 label {
@@ -65,7 +65,7 @@ label {
 
 .battlefield {
     display: flex;
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -74,6 +74,10 @@ label {
 
 .vs {
     font-size: 32px;
+}
+
+.score {
+    font-size: 18px;
 }
 
 #message {
