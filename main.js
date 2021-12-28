@@ -14,6 +14,7 @@ winsAgainst.set(paper, rock);
 const rockBtn = document.querySelector('#leaf');
 const paperBtn = document.querySelector('#fire');
 const scissorsBtn = document.querySelector('#water');
+const playBtns = [rockBtn, paperBtn, scissorsBtn];
 
 const yourImg = document.querySelector('#your-play');
 const computerImg = document.querySelector('#computer-play');
@@ -34,9 +35,7 @@ function resetGame() {
     computerImg.src = `img/question.png`;
     yourScoreSpan.textContent = playerGamesWon;
     computerScoreSpan.textContent = computerGamesWon;
-    rockBtn.disabled = false;
-    paperBtn.disabled = false;
-    scissorsBtn.disabled = false;
+    playBtns.forEach(btn => btn.classList.remove("disabled"));
     playAgainDiv.style.display = "none";
 }
 
@@ -62,9 +61,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function promptPlayAgain() {
-    rockBtn.disabled = true;
-    paperBtn.disabled = true;
-    scissorsBtn.disabled = true;
+    playBtns.forEach(btn => btn.classList.add("disabled"));
     playAgainDiv.style.display = "block";
 }
 

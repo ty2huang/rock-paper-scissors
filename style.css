@@ -11,6 +11,16 @@ body {
 
 button {
     cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: lightgray;
 }
 
 .dark-container {
