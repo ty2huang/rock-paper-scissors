@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rock Paper Scissors</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <script src="main.js"></script>
+    <div class="dark-container">
+        <h1>Choose Your Elemental Monkey Pokemon!</h1>
+        <div>Water beats Fire | Fire beats Grass | Grass beats Water</div>
+    </div>
+    <div class="light-container">
+        <div class="choices">
+            <div class="choice">
+                <label for="water">WATER<br>(Panpour)</label>
+                <button id="water"><img src="img/Panpour.png" class="selection-img"></button>
+            </div>
+            <div class="choice">
+                <label for="fire">FIRE<br>(Pansear)</label>
+                <button id="fire"><img src="img/Pansear.png" class="selection-img"></button>
+            </div>
+            <div class="choice">
+                <label for="leaf">GRASS<br>(Pansage)</label>
+                <button id="leaf"><img src="img/Pansage.png" class="selection-img"></button>
+            </div>
+        </div>
+    </div>
+    <div class="dark-container ">
+        <h2>Pokemon Battle! First to 5 wins</h2>
+        <div class="battlefield">
+            <div class="selected">
+                <img src="img/question.png" class="selection-img" id="your-play">
+                <div>You</div>
+                <div>Score: <span id="your-score">0</span></div>
+            </div>
+            <div class="vs">
+                vs.
+            </div>
+            <div class="selected">
+                <img src="img/question.png" class="selection-img" id="computer-play">
+                <div>Computer</div>
+                <div>Score: <span id="opponent-score">0</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="dark-container" id="message"></div>
+    <div class="dark-container" id="play-again">
+        <div id="final-result"></div>
+        <button id="play-again-btn">Play again</button>
+    </div>
+    <footer class="footer">Copyright © 2021 ty2huang 
+        <a href="https://github.com/ty2huang/rock-paper-scissors" target="_blank">
+            <i class="fa fa-github" style="font-size:24px;color:white"></i>
+        </a>
+    </footer>
 </body>
 </html>

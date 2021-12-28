@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #00003f;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+}
+
+.dark-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-container {
+    background-color: #ffcb05;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.choices {
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.selection-img {
+    width: 200px;
+    height: 200px;
+}
+
+label {
+    text-align: center;
+    width: 100px;
+}
+
+.battlefield {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+.vs {
+    font-size: 32px;
+}
+
+#message {
+    font-size: 32px;
+    color: orange;
+    flex-grow: 1;
+}
+
+#play-again {
+    font-size: 32px;
+    display: none;
+}
+
+#play-again-btn {
+    padding: 8px 32px;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+    gap: 10px;
+}
