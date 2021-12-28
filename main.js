@@ -80,15 +80,19 @@ function handleClick(playerSelection) {
     }
 
     messageDiv.innerHTML = message;
-    yourImg.src = `img/${playerSelection}.png`;
-    computerImg.src = `img/${computerSelection}.png`;
+    yourImg.src = `img/loading.png`;
+    computerImg.src = `img/loading.png`;
+    setTimeout(() => {
+        yourImg.src = `img/${playerSelection}.png`;
+        computerImg.src = `img/${computerSelection}.png`;
+    }, 100);
     yourScoreSpan.textContent = playerGamesWon;
     computerScoreSpan.textContent = computerGamesWon;
 
     if (playerGamesWon === roundsToWin) {
-        finalResultDiv.textContent = "Yay! You Won!"
+        finalResultDiv.textContent = "Game over. You win!"
     } else if (computerGamesWon === roundsToWin) {
-        finalResultDiv.textContent = "Oh no. You Lost."
+        finalResultDiv.textContent = "Game over. You lost."
     } else {
         return;
     }
